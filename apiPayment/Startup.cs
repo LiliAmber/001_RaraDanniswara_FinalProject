@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore.Design;
 using MySql.EntityFrameworkCore;
 using MySql.Data;
 //=============
+// using Microsoft.EntityFrameworkCore.Sqlite;
 using Payment.Data;
 using PaymentJWT.Configuration;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -61,6 +62,7 @@ namespace apiPayment
             .AddEntityFrameworkStores<ApiDbContext>();
             services.AddControllers();
             services.AddDbContext<ApiDbContext>(item => item.UseMySQL(Configuration.GetConnectionString("myconn")));
+            // services.AddDbContext<ApiDbContext>(item => item.UseSqlite(Configuration.GetConnectionString("myconn")));
             //==untuk nampilin button authorize di swagger==
             services.AddSwaggerGen(swagger =>
             {
@@ -115,6 +117,8 @@ namespace apiPayment
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {
