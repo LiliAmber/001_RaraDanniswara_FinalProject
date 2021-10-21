@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "74bc58fd-c277-428d-bb32-771fc4917dc6",
+		"name": "paymentAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register new user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"rara2\",\n  \"email\": \"rara2@mail.com\",\n  \"password\": \"Pass12345!\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5001/api/AuthManagement/Register",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"AuthManagement",
+								"Register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \n  \"email\": \"rara2@mail.com\",\n  \"password\": \"Pass12345!\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5001/api/AuthManagement/Login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"AuthManagement",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refresh token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjE5ZDA2YjE2LWZmZGItNDM5ZC05ZjE0LTMzYjk0MzEyNzI4NyIsImVtYWlsIjoicmFyYTJAbWFpbC5jb20iLCJzdWIiOiJyYXJhMkBtYWlsLmNvbSIsImp0aSI6IjU5MmM1Nzc0LTU2ZTYtNDRkYy04MzcxLTc2YzZmOGZiMDQyMSIsIm5iZiI6MTYzNDgxNzIwMCwiZXhwIjoxNjM0ODE3MjYwLCJpYXQiOjE2MzQ4MTcyMDB9.FpUA4-7GqjxTvE41ec89Y8xiJwvzEXk9mETX9IWMciM\",\n    \"refreshToken\": \"9KLUFLFQ935YLHXODPCI5SE3IL27FPQ6ZD9e33181f5-3f15-47c5-a732-68d1e4ab6a71\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5001/api/AuthManagement/RefreshToken",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"AuthManagement",
+								"RefreshToken"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get Payment Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjE5ZDA2YjE2LWZmZGItNDM5ZC05ZjE0LTMzYjk0MzEyNzI4NyIsImVtYWlsIjoicmFyYTJAbWFpbC5jb20iLCJzdWIiOiJyYXJhMkBtYWlsLmNvbSIsImp0aSI6ImUzZDI5ZTY5LTJiNGMtNDI3NS05OTRiLWU4YzNjNDAxMDViOCIsIm5iZiI6MTYzNDgxNzMzMSwiZXhwIjoxNjM0ODE3MzkxLCJpYXQiOjE2MzQ4MTczMzF9.M84kbG7fI5f5eERS0VfTGp2wwj1ArJrN1dDN2HbXo8s",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:5001/api/Payment",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get payment details by id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjE5ZDA2YjE2LWZmZGItNDM5ZC05ZjE0LTMzYjk0MzEyNzI4NyIsImVtYWlsIjoicmFyYTJAbWFpbC5jb20iLCJzdWIiOiJyYXJhMkBtYWlsLmNvbSIsImp0aSI6ImUzZDI5ZTY5LTJiNGMtNDI3NS05OTRiLWU4YzNjNDAxMDViOCIsIm5iZiI6MTYzNDgxNzMzMSwiZXhwIjoxNjM0ODE3MzkxLCJpYXQiOjE2MzQ4MTczMzF9.M84kbG7fI5f5eERS0VfTGp2wwj1ArJrN1dDN2HbXo8s",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:5001/api/Payment/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Payment",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add new payment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjE5ZDA2YjE2LWZmZGItNDM5ZC05ZjE0LTMzYjk0MzEyNzI4NyIsImVtYWlsIjoicmFyYTJAbWFpbC5jb20iLCJzdWIiOiJyYXJhMkBtYWlsLmNvbSIsImp0aSI6ImUzZDI5ZTY5LTJiNGMtNDI3NS05OTRiLWU4YzNjNDAxMDViOCIsIm5iZiI6MTYzNDgxNzMzMSwiZXhwIjoxNjM0ODE3MzkxLCJpYXQiOjE2MzQ4MTczMzF9.M84kbG7fI5f5eERS0VfTGp2wwj1ArJrN1dDN2HbXo8s",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \n        \"cardOwnerName\": \"user2(post)\",\n        \"cardNumber\": \"0002\",\n        \"expirationDate\": \"12/2021\",\n        \"securityCode\": \"002\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Payment",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put selected payment details",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjE5ZDA2YjE2LWZmZGItNDM5ZC05ZjE0LTMzYjk0MzEyNzI4NyIsImVtYWlsIjoicmFyYTJAbWFpbC5jb20iLCJzdWIiOiJyYXJhMkBtYWlsLmNvbSIsImp0aSI6IjJlNjc2NzQxLTc5NmQtNGIwNS05NDc3LTBmNmMwYzg3MjU2NSIsIm5iZiI6MTYzNDgxNzcyMSwiZXhwIjoxNjM0ODE3NzgxLCJpYXQiOjE2MzQ4MTc3MjF9.jUI2JydjO8uq72WAWUksOgqygd_c5MZs7D4mhGnTYXw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"paymentDetailId\": 2,\n    \"cardOwnerName\": \"user2(put)\",\n    \"cardNumber\": \"0002\",\n    \"expirationDate\": \"12/2021\",\n    \"securityCode\": \"002\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Payment/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Payment",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete selected payement details",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjE5ZDA2YjE2LWZmZGItNDM5ZC05ZjE0LTMzYjk0MzEyNzI4NyIsImVtYWlsIjoicmFyYTJAbWFpbC5jb20iLCJzdWIiOiJyYXJhMkBtYWlsLmNvbSIsImp0aSI6IjJlNjc2NzQxLTc5NmQtNGIwNS05NDc3LTBmNmMwYzg3MjU2NSIsIm5iZiI6MTYzNDgxNzcyMSwiZXhwIjoxNjM0ODE3NzgxLCJpYXQiOjE2MzQ4MTc3MjF9.jUI2JydjO8uq72WAWUksOgqygd_c5MZs7D4mhGnTYXw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:5001/api/Payment/5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Payment",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
