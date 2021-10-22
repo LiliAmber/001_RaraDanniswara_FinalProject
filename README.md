@@ -10,6 +10,8 @@ Tech Stack used to build this app :
 - ASP .Net
 - MySQL
 
+github : https://github.com/LiliAmber/001_RaraDanniswara_FinalProject
+
 &nbsp;
 
 ## **How to run in your device**
