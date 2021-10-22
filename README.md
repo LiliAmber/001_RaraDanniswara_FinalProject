@@ -30,3 +30,7 @@ github : https://github.com/LiliAmber/001_RaraDanniswara_FinalProject
 4. api_doc.md => api documentation for every endpoints
 5. paymentAPI.postman_collection.json => api doc from postman
 ---
+//==offline db(ubag connection string di file appsettings.json pada folder apiPayment)==
+"ConnectionStrings": {
+    "myconn": "Server=localhost;Database=Payment;Uid=root;Pwd=;SslMode=none",
+},
