@@ -23,12 +23,13 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:5001/api/AuthManagement/Register",
+							"raw": "https://apipayment.herokuapp.com/api/AuthManagement/Register",
 							"protocol": "https",
 							"host": [
-								"localhost"
+								"apipayment",
+								"herokuapp",
+								"com"
 							],
-							"port": "5001",
 							"path": [
 								"api",
 								"AuthManagement",
@@ -53,12 +54,13 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:5001/api/AuthManagement/Login",
+							"raw": "https://apipayment.herokuapp.com/api/AuthManagement/Login",
 							"protocol": "https",
 							"host": [
-								"localhost"
+								"apipayment",
+								"herokuapp",
+								"com"
 							],
-							"port": "5001",
 							"path": [
 								"api",
 								"AuthManagement",
@@ -75,7 +77,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjE5ZDA2YjE2LWZmZGItNDM5ZC05ZjE0LTMzYjk0MzEyNzI4NyIsImVtYWlsIjoicmFyYTJAbWFpbC5jb20iLCJzdWIiOiJyYXJhMkBtYWlsLmNvbSIsImp0aSI6IjU5MmM1Nzc0LTU2ZTYtNDRkYy04MzcxLTc2YzZmOGZiMDQyMSIsIm5iZiI6MTYzNDgxNzIwMCwiZXhwIjoxNjM0ODE3MjYwLCJpYXQiOjE2MzQ4MTcyMDB9.FpUA4-7GqjxTvE41ec89Y8xiJwvzEXk9mETX9IWMciM\",\n    \"refreshToken\": \"9KLUFLFQ935YLHXODPCI5SE3IL27FPQ6ZD9e33181f5-3f15-47c5-a732-68d1e4ab6a71\"\n}",
+							"raw": "{\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjAwMzJlNmQ0LTY5MjgtNDhjYS1hM2ZiLTZmNTlhMjhlYTIyMyIsImVtYWlsIjoicmFyYTJAbWFpbC5jb20iLCJzdWIiOiJyYXJhMkBtYWlsLmNvbSIsImp0aSI6ImFhM2E3MTYzLTg5ODMtNGIzNy1hNzA4LTcyMjA4NGE3NGE0OCIsIm5iZiI6MTYzNDg5MTU1MiwiZXhwIjoxNjM0ODkyMTUyLCJpYXQiOjE2MzQ4OTE1NTJ9.8JnJhjCgm5iOy27DkAXACY4Tk9uaLPe9A38PT-2oW4M\",\n    \"refreshToken\": \"5S99CN2PB22HSUTWW9LW9ACTMN5N3Q2UNHLc3c0886c-1677-4aba-8064-475f2b89dc59\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -83,12 +85,13 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:5001/api/AuthManagement/RefreshToken",
+							"raw": "https://apipayment.herokuapp.com/api/AuthManagement/RefreshToken",
 							"protocol": "https",
 							"host": [
-								"localhost"
+								"apipayment",
+								"herokuapp",
+								"com"
 							],
-							"port": "5001",
 							"path": [
 								"api",
 								"AuthManagement",
@@ -107,17 +110,18 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjE5ZDA2YjE2LWZmZGItNDM5ZC05ZjE0LTMzYjk0MzEyNzI4NyIsImVtYWlsIjoicmFyYTJAbWFpbC5jb20iLCJzdWIiOiJyYXJhMkBtYWlsLmNvbSIsImp0aSI6ImUzZDI5ZTY5LTJiNGMtNDI3NS05OTRiLWU4YzNjNDAxMDViOCIsIm5iZiI6MTYzNDgxNzMzMSwiZXhwIjoxNjM0ODE3MzkxLCJpYXQiOjE2MzQ4MTczMzF9.M84kbG7fI5f5eERS0VfTGp2wwj1ArJrN1dDN2HbXo8s",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjAwMzJlNmQ0LTY5MjgtNDhjYS1hM2ZiLTZmNTlhMjhlYTIyMyIsImVtYWlsIjoicmFyYTJAbWFpbC5jb20iLCJzdWIiOiJyYXJhMkBtYWlsLmNvbSIsImp0aSI6ImFhM2E3MTYzLTg5ODMtNGIzNy1hNzA4LTcyMjA4NGE3NGE0OCIsIm5iZiI6MTYzNDg5MTU1MiwiZXhwIjoxNjM0ODkyMTUyLCJpYXQiOjE2MzQ4OTE1NTJ9.8JnJhjCgm5iOy27DkAXACY4Tk9uaLPe9A38PT-2oW4M",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "https://localhost:5001/api/Payment",
+					"raw": "https://apipayment.herokuapp.com/api/Payment",
 					"protocol": "https",
 					"host": [
-						"localhost"
+						"apipayment",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
 						"api",
 						"Payment"
@@ -133,21 +137,22 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjE5ZDA2YjE2LWZmZGItNDM5ZC05ZjE0LTMzYjk0MzEyNzI4NyIsImVtYWlsIjoicmFyYTJAbWFpbC5jb20iLCJzdWIiOiJyYXJhMkBtYWlsLmNvbSIsImp0aSI6ImUzZDI5ZTY5LTJiNGMtNDI3NS05OTRiLWU4YzNjNDAxMDViOCIsIm5iZiI6MTYzNDgxNzMzMSwiZXhwIjoxNjM0ODE3MzkxLCJpYXQiOjE2MzQ4MTczMzF9.M84kbG7fI5f5eERS0VfTGp2wwj1ArJrN1dDN2HbXo8s",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjAwMzJlNmQ0LTY5MjgtNDhjYS1hM2ZiLTZmNTlhMjhlYTIyMyIsImVtYWlsIjoicmFyYTJAbWFpbC5jb20iLCJzdWIiOiJyYXJhMkBtYWlsLmNvbSIsImp0aSI6ImFhM2E3MTYzLTg5ODMtNGIzNy1hNzA4LTcyMjA4NGE3NGE0OCIsIm5iZiI6MTYzNDg5MTU1MiwiZXhwIjoxNjM0ODkyMTUyLCJpYXQiOjE2MzQ4OTE1NTJ9.8JnJhjCgm5iOy27DkAXACY4Tk9uaLPe9A38PT-2oW4M",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "https://localhost:5001/api/Payment/2",
+					"raw": "https://apipayment.herokuapp.com/api/Payment/3",
 					"protocol": "https",
 					"host": [
-						"localhost"
+						"apipayment",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
 						"api",
 						"Payment",
-						"2"
+						"3"
 					]
 				}
 			},
@@ -160,13 +165,13 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjE5ZDA2YjE2LWZmZGItNDM5ZC05ZjE0LTMzYjk0MzEyNzI4NyIsImVtYWlsIjoicmFyYTJAbWFpbC5jb20iLCJzdWIiOiJyYXJhMkBtYWlsLmNvbSIsImp0aSI6ImUzZDI5ZTY5LTJiNGMtNDI3NS05OTRiLWU4YzNjNDAxMDViOCIsIm5iZiI6MTYzNDgxNzMzMSwiZXhwIjoxNjM0ODE3MzkxLCJpYXQiOjE2MzQ4MTczMzF9.M84kbG7fI5f5eERS0VfTGp2wwj1ArJrN1dDN2HbXo8s",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjAwMzJlNmQ0LTY5MjgtNDhjYS1hM2ZiLTZmNTlhMjhlYTIyMyIsImVtYWlsIjoicmFyYTJAbWFpbC5jb20iLCJzdWIiOiJyYXJhMkBtYWlsLmNvbSIsImp0aSI6ImFhM2E3MTYzLTg5ODMtNGIzNy1hNzA4LTcyMjA4NGE3NGE0OCIsIm5iZiI6MTYzNDg5MTU1MiwiZXhwIjoxNjM0ODkyMTUyLCJpYXQiOjE2MzQ4OTE1NTJ9.8JnJhjCgm5iOy27DkAXACY4Tk9uaLPe9A38PT-2oW4M",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n        \n        \"cardOwnerName\": \"user2(post)\",\n        \"cardNumber\": \"0002\",\n        \"expirationDate\": \"12/2021\",\n        \"securityCode\": \"002\"\n}",
+					"raw": "{\n        \n        \"cardOwnerName\": \"user2(post1)\",\n        \"cardNumber\": \"0002\",\n        \"expirationDate\": \"12/2021\",\n        \"securityCode\": \"002\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -174,12 +179,13 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:5001/api/Payment",
+					"raw": "https://apipayment.herokuapp.com/api/Payment",
 					"protocol": "https",
 					"host": [
-						"localhost"
+						"apipayment",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
 						"api",
 						"Payment"
@@ -195,13 +201,13 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjE5ZDA2YjE2LWZmZGItNDM5ZC05ZjE0LTMzYjk0MzEyNzI4NyIsImVtYWlsIjoicmFyYTJAbWFpbC5jb20iLCJzdWIiOiJyYXJhMkBtYWlsLmNvbSIsImp0aSI6IjJlNjc2NzQxLTc5NmQtNGIwNS05NDc3LTBmNmMwYzg3MjU2NSIsIm5iZiI6MTYzNDgxNzcyMSwiZXhwIjoxNjM0ODE3NzgxLCJpYXQiOjE2MzQ4MTc3MjF9.jUI2JydjO8uq72WAWUksOgqygd_c5MZs7D4mhGnTYXw",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjAwMzJlNmQ0LTY5MjgtNDhjYS1hM2ZiLTZmNTlhMjhlYTIyMyIsImVtYWlsIjoicmFyYTJAbWFpbC5jb20iLCJzdWIiOiJyYXJhMkBtYWlsLmNvbSIsImp0aSI6ImFhM2E3MTYzLTg5ODMtNGIzNy1hNzA4LTcyMjA4NGE3NGE0OCIsIm5iZiI6MTYzNDg5MTU1MiwiZXhwIjoxNjM0ODkyMTUyLCJpYXQiOjE2MzQ4OTE1NTJ9.8JnJhjCgm5iOy27DkAXACY4Tk9uaLPe9A38PT-2oW4M",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"paymentDetailId\": 2,\n    \"cardOwnerName\": \"user2(put)\",\n    \"cardNumber\": \"0002\",\n    \"expirationDate\": \"12/2021\",\n    \"securityCode\": \"002\"\n}",
+					"raw": "{\n    \"paymentDetailId\": 8,\n        \"cardOwnerName\": \"user2(post1put)\",\n        \"cardNumber\": \"0002\",\n        \"expirationDate\": \"12/2021\",\n        \"securityCode\": \"002\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -209,16 +215,17 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:5001/api/Payment/2",
+					"raw": "https://apipayment.herokuapp.com/api/Payment/8",
 					"protocol": "https",
 					"host": [
-						"localhost"
+						"apipayment",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
 						"api",
 						"Payment",
-						"2"
+						"8"
 					]
 				}
 			},
@@ -231,21 +238,22 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjE5ZDA2YjE2LWZmZGItNDM5ZC05ZjE0LTMzYjk0MzEyNzI4NyIsImVtYWlsIjoicmFyYTJAbWFpbC5jb20iLCJzdWIiOiJyYXJhMkBtYWlsLmNvbSIsImp0aSI6IjJlNjc2NzQxLTc5NmQtNGIwNS05NDc3LTBmNmMwYzg3MjU2NSIsIm5iZiI6MTYzNDgxNzcyMSwiZXhwIjoxNjM0ODE3NzgxLCJpYXQiOjE2MzQ4MTc3MjF9.jUI2JydjO8uq72WAWUksOgqygd_c5MZs7D4mhGnTYXw",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjAwMzJlNmQ0LTY5MjgtNDhjYS1hM2ZiLTZmNTlhMjhlYTIyMyIsImVtYWlsIjoicmFyYTJAbWFpbC5jb20iLCJzdWIiOiJyYXJhMkBtYWlsLmNvbSIsImp0aSI6ImFhM2E3MTYzLTg5ODMtNGIzNy1hNzA4LTcyMjA4NGE3NGE0OCIsIm5iZiI6MTYzNDg5MTU1MiwiZXhwIjoxNjM0ODkyMTUyLCJpYXQiOjE2MzQ4OTE1NTJ9.8JnJhjCgm5iOy27DkAXACY4Tk9uaLPe9A38PT-2oW4M",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "https://localhost:5001/api/Payment/5",
+					"raw": "https://apipayment.herokuapp.com/api/Payment/7",
 					"protocol": "https",
 					"host": [
-						"localhost"
+						"apipayment",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
 						"api",
 						"Payment",
-						"5"
+						"7"
 					]
 				}
 			},

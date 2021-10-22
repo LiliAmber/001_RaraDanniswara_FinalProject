@@ -104,7 +104,7 @@ namespace TodoAppJWT.Controllers
                     new Claim(JwtRegisteredClaimNames.Sub, user.Email),
                     new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
                 }),
-                Expires = DateTime.UtcNow.AddMinutes(10), //==expired token in 10min==
+                Expires = DateTime.UtcNow.AddMinutes(2), //==expired token in 10min==
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 
