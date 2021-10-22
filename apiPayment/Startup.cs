@@ -69,7 +69,7 @@ namespace apiPayment
                 swagger.SwaggerDoc("v1",
                 new OpenApiInfo 
                 {
-                    Title = "TodoApp",
+                    Title = "Payment API",
                     Version = "v1",
                     Description =
                     "Authentication and Authorization in ASP.NET 5 with JWT and Swagger"
