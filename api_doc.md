@@ -12,10 +12,20 @@ Tech Stack used to build this app :
 
 &nbsp;
 
+### ==offline db(ubah connection string di file appsettings.json pada folder apiPayment)==
+"ConnectionStrings": {
+    "myconn": "Server=localhost;Database=Payment;Uid=root;Pwd=;SslMode=none",
+},
+### ==hosted db(ubah connection string di file appsettings.json pada folder apiPayment)===
+"ConnectionStrings": {
+    "myconn": "Server=sql6.freemysqlhosting.net;Database=sql6446040;Username=sql6446040;Pwd=EDm1dgBiLZ;SslMode=none"
+}
+
 ## **Endpoints**
 
 ---
-### url_Base : https://localhost:5001
+### url_Base(local db) : https://localhost:5001
+### url_Base(hosted db) : https://apipayment.herokuapp.com
 
 - `POST` /api/AuthManagement/Register
 - `POST` /api/AuthManagement/Login

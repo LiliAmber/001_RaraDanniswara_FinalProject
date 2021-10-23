@@ -13,7 +13,6 @@ using Microsoft.EntityFrameworkCore.Design;
 using MySql.EntityFrameworkCore;
 using MySql.Data;
 //=============
-// using Microsoft.EntityFrameworkCore.Sqlite;
 using Payment.Data;
 using PaymentJWT.Configuration;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
