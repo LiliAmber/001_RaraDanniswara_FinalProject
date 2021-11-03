@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = apiPayment
-build_property.ProjectDir = /Users/raradanniswaramusin/Desktop/intern-OCBC/001_RaraDanniswara_FinalProject/apiPayment/
+build_property.ProjectDir = /Users/raradanniswaramusin/Desktop/intern-OCBC/tugas/001_RaraDanniswara_FinalProject/apiPayment/

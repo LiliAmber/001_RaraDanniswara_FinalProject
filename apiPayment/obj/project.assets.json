@@ -2373,11 +2373,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/raradanniswaramusin/Desktop/intern-OCBC/001_RaraDanniswara_FinalProject/apiPayment/apiPayment.csproj",
+      "projectUniqueName": "/Users/raradanniswaramusin/Desktop/intern-OCBC/tugas/001_RaraDanniswara_FinalProject/apiPayment/apiPayment.csproj",
       "projectName": "apiPayment",
-      "projectPath": "/Users/raradanniswaramusin/Desktop/intern-OCBC/001_RaraDanniswara_FinalProject/apiPayment/apiPayment.csproj",
+      "projectPath": "/Users/raradanniswaramusin/Desktop/intern-OCBC/tugas/001_RaraDanniswara_FinalProject/apiPayment/apiPayment.csproj",
       "packagesPath": "/Users/raradanniswaramusin/.nuget/packages/",
-      "outputPath": "/Users/raradanniswaramusin/Desktop/intern-OCBC/001_RaraDanniswara_FinalProject/apiPayment/obj/",
+      "outputPath": "/Users/raradanniswaramusin/Desktop/intern-OCBC/tugas/001_RaraDanniswara_FinalProject/apiPayment/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/raradanniswaramusin/.nuget/NuGet/NuGet.Config"

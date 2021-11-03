@@ -15,7 +15,7 @@ namespace Payment.Controllers
     [Route("api/[controller]")]
     [ApiController]
     //==auth process==
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    // [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 
     public class PaymentController : ControllerBase
     {
@@ -50,7 +50,8 @@ namespace Payment.Controllers
                 await _context.SaveChangesAsync();
 
                 // return CreatedAtAction(nameof(GetPaymentDetailsById), new {data.paymentDetailId}, data);
-                return Ok("Successfully create a new payment details, please check your database");
+                // return Ok(new { message = "User updated" });
+                return Ok(new { message = "Successfully create a new payment details, please check your database"});
             }
 
             return new JsonResult("Something went wrong") {StatusCode = 500};
@@ -76,7 +77,7 @@ namespace Payment.Controllers
             await _context.SaveChangesAsync();
 
             // return NoContent();
-            return Ok("Successfully update selected payment details");
+            return Ok(new {message = "Successfully update selected payment details"});
         }
 
         [HttpDelete("{id}")]
@@ -92,7 +93,7 @@ namespace Payment.Controllers
 
             //==respon disini==
             // return Ok(existItem);
-            return Ok("Successfully delete selected payment details");
+            return Ok(new {message = "Successfully delete selected payment details"});
         }
     }
 }

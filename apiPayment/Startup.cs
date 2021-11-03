@@ -30,10 +30,23 @@ namespace apiPayment
         }
 
         public IConfiguration Configuration { get; }
+        
+        //===congfig untuk CORS===
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
+        {   
+            //==config untuk CORS==
+            services.AddCors(options => {
+            options.AddPolicy(name: MyAllowSpecificOrigins, 
+                                    builder => {
+                                    builder.WithOrigins("*")
+                                    .AllowAnyHeader()
+                                    .AllowAnyMethod();
+                              });
+        });
+
             //==inject jwt config==
             services.Configure<JwtConfig>(Configuration.GetSection("JwtConfig"));
             
@@ -110,10 +123,14 @@ namespace apiPayment
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "apiPayment v1"));
             }
-
-            app.UseHttpsRedirection();
+            
+            //==disable biar nggak kena CORS==
+            // app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            //===Cconfig untuk CORS==
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseAuthorization();
 
