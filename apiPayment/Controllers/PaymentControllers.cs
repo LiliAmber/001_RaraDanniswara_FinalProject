@@ -15,7 +15,7 @@ namespace Payment.Controllers
     [Route("api/[controller]")]
     [ApiController]
     //==auth process==
-    // [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 
     public class PaymentController : ControllerBase
     {

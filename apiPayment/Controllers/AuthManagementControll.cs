@@ -73,7 +73,7 @@ namespace TodoAppJWT.Controllers
                 {
                     var jwtToken = await GenerateJwtToken(newUser);
                     // return Ok(jwtToken);
-                    return Ok("Thank you for your registration");
+                    return Ok(new {message = "Thank you for your registration"});
                 } 
                 else {
                     return BadRequest(new RegistrationResponse() {
@@ -104,7 +104,7 @@ namespace TodoAppJWT.Controllers
                     new Claim(JwtRegisteredClaimNames.Sub, user.Email),
                     new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
                 }),
-                Expires = DateTime.UtcNow.AddMinutes(2), //==expired token in 2min==
+                Expires = DateTime.UtcNow.AddMinutes(1), //==expired token in 2min==
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 
